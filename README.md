@@ -8,7 +8,7 @@ The ghcr package must be public, or add ghcr.io credentials under Dokploy > Regi
 
 ## Dokploy setup
 
-1. Create a Compose service. Provider: GitHub, this repo, branch `main`, compose path `./docker-compose.yaml`.
+1. Create a Compose service. Provider: GitHub, this repo, branch `main`, compose path `./docker-compose.yml`.
 2. Environment tab: paste the variables from `.env.example` and fill in real values.
 3. Domains tab: service `postiz`, container port `5000`, HTTPS on, Let's Encrypt.
 4. Deploy. First run pulls about 3 GB of images.
