@@ -1,8 +1,10 @@
 # postiz-deploy
 
-Docker Compose setup for running [Postiz](https://github.com/gitroomhq/postiz-app) on a VPS with Dokploy.
+Docker Compose setup for running Assign, a rebranded fork of [Postiz](https://github.com/gitroomhq/postiz-app), on a VPS with Dokploy.
 
-It uses the official `ghcr.io/gitroomhq/postiz-app:latest` image, so nothing is built here.
+It uses the `ghcr.io/abahvictor360-sketch/assign-app:latest` image, built from github.com/abahvictor360-sketch/assign-app (Postiz rebranded to Assign). Nothing is built here.
+
+The ghcr package must be public, or add ghcr.io credentials under Dokploy > Registry.
 
 ## Dokploy setup
 

@@ -1,11 +1,11 @@
-# Postiz for Dokploy (Hostinger VPS)
+# Assign (Postiz fork) for Dokploy (Hostinger VPS)
 # Deployed by Dokploy from this GitHub repo.
 # Secrets come from Dokploy > Environment (see .env.example). Never commit them.
 # No host ports: Traefik (Dokploy) routes https://<domain> to postiz:5000.
 
 services:
   postiz:
-    image: ghcr.io/gitroomhq/postiz-app:latest
+    image: ghcr.io/abahvictor360-sketch/assign-app:latest
     restart: always
     environment:
       MAIN_URL: 'https://${DOMAIN:?set DOMAIN in Dokploy Environment}'
